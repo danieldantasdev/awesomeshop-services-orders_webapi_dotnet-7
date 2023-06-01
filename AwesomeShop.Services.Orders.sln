@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Orders.Core", "AwesomeShop.Services.Orders.Core\AwesomeShop.Services.Orders.Core.csproj", "{F81C941A-3BE7-4E34-AFA3-CCEA2F9C92DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F81C941A-3BE7-4E34-AFA3-CCEA2F9C92DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81C941A-3BE7-4E34-AFA3-CCEA2F9C92DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81C941A-3BE7-4E34-AFA3-CCEA2F9C92DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81C941A-3BE7-4E34-AFA3-CCEA2F9C92DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
