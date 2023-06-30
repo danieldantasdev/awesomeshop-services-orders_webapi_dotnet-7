@@ -1,6 +1,6 @@
 namespace AwesomeShop.Services.Orders.Core.Enums;
 
-public enum OrderStatus
+public enum OrderStatusEnum
 {
     Started = 1,
     Completed = 2,
