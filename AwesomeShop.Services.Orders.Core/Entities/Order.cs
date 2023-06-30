@@ -27,15 +27,15 @@ public class Order : AggregateRoot
     public PaymentInfo PaymentInfo { get; private set; }
     public List<OrderItem> OrderItems { get; private set; }
     public DateTime CreatedAt { get; private set; }
-    public OrderStatus OrderStatus { get; private set; }
+    public OrderStatusEnum Status { get; private set; }
 
     public void SetAsCompleted()
     {
-        OrderStatus = OrderStatus.Completed;
+        Status = OrderStatusEnum.Completed;
     }
     
     public void SetAsRejected()
     {
-        OrderStatus = OrderStatus.Rejected;
+        Status = OrderStatusEnum.Rejected;
     }
 }
