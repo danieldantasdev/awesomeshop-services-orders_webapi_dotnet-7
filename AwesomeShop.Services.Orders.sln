@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Orders
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Orders.Application", "AwesomeShop.Services.Orders.Application\AwesomeShop.Services.Orders.Application.csproj", "{63728D49-E225-4147-9DD1-974023F9C9AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Orders.Api", "AwesomeShop.Services.Orders.Api\AwesomeShop.Services.Orders.Api.csproj", "{330F0D8E-47B6-4356-BE94-11948CBAD54A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{63728D49-E225-4147-9DD1-974023F9C9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63728D49-E225-4147-9DD1-974023F9C9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63728D49-E225-4147-9DD1-974023F9C9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330F0D8E-47B6-4356-BE94-11948CBAD54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330F0D8E-47B6-4356-BE94-11948CBAD54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330F0D8E-47B6-4356-BE94-11948CBAD54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330F0D8E-47B6-4356-BE94-11948CBAD54A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
