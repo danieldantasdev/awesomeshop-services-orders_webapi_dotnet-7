@@ -10,4 +10,13 @@
       <ProjectReference Include="..\AwesomeShop.Services.Orders.Core\AwesomeShop.Services.Orders.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="MessageBus\" />
+      <Folder Include="Persistence\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+    </ItemGroup>
+
 </Project>

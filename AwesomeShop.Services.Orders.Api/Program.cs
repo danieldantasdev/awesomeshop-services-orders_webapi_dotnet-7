@@ -10,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatRExtension();
 builder.Services.AddInfrastructureExtension();
+builder.Services.AddMongoDbExtension();
 
 var app = builder.Build();
 
