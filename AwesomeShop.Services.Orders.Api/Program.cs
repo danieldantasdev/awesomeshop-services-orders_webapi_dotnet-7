@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMediatRExtension();
 builder.Services.AddInfrastructureExtension();
 builder.Services.AddMongoDbExtension();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
