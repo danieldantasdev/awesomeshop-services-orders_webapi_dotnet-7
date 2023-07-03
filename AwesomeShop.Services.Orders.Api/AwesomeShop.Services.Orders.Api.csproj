@@ -24,4 +24,8 @@
       <ProjectReference Include="..\AwesomeShop.Services.Orders.Infrastructure\AwesomeShop.Services.Orders.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\Styles\SwaggerUi\Dark.css" />
+    </ItemGroup>
+
 </Project>
