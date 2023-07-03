@@ -1,8 +1,8 @@
-using AwesomeShop.Services.Orders.Core.Repositories;
-using MongoDB.Driver;
 using AwesomeShop.Services.Orders.Core.Entities;
+using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
+using MongoDB.Driver;
 
-namespace AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Orders;
+namespace AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Implementations.Orders;
 
 public class OrderRepository : IOrderRepository
 {

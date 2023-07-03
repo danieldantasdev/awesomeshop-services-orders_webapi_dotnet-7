@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace AwesomeShop.Services.Orders.Api.Extensions;
 
-public static class MongoDbExtension
+public static class DatabaseExtension
 {
     public static IServiceCollection AddMongoDbExtension(this IServiceCollection serviceCollection)
     {

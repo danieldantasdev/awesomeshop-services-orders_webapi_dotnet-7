@@ -1,4 +1,5 @@
 using AwesomeShop.Services.Orders.Core.Repositories;
+using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
 using MediatR;
 
 namespace AwesomeShop.Services.Orders.Application.Queries.Orders;

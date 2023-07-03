@@ -3,7 +3,7 @@ using MediatR;
 
 namespace AwesomeShop.Services.Orders.Api.Extensions;
 
-public static class MediatRExtension
+public static class MediatorExtension
 {
     public static IServiceCollection AddMediatRExtension(this IServiceCollection serviceCollection)
     {

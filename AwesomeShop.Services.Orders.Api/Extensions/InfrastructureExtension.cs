@@ -1,5 +1,6 @@
 using AwesomeShop.Services.Orders.Core.Repositories;
-using AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Orders;
+using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
+using AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Implementations.Orders;
 
 namespace AwesomeShop.Services.Orders.Api.Extensions;
 
