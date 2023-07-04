@@ -10,4 +10,15 @@
       <ProjectReference Include="..\AwesomeShop.Services.Orders.Core\AwesomeShop.Services.Orders.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Persistence\" />
+      <Folder Include="Persistence\Repositories\Implementations\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+    </ItemGroup>
+
 </Project>

@@ -17,6 +17,7 @@ public class Order : AggregateRoot
         PaymentInfo = paymentInfo;
         OrderItems = orderItems;
         CreatedAt = DateTime.Now;
+        Status = OrderStatusEnum.Started;
         AddEvent(new OrderCreated(Id, TotalPrice, PaymentInfo, Customer.FullName, Customer.Email));
     }
 

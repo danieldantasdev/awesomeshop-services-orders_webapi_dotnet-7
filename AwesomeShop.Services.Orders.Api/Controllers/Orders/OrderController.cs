@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AwesomeShop.Services.Orders.Api.Controllers.Orders;
 
-[Route(("api/customer/{customerId}/orders"))]
+[Route(("api/customer/{customerId:guid}/orders"))]
 // [Route(("api/orders"))]
 [ApiController]
 public class OrderController : ControllerBase
@@ -30,8 +30,7 @@ public class OrderController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] AddOrderCommandInputModel addOrderCommandInputModel)
     {
-        var id = await _mediator.Send(addOrderCommandInputModel);
-        return CreatedAtAction(nameof(Get), new { id = id }, addOrderCommandInputModel);
-
+        var guid = await _mediator.Send(addOrderCommandInputModel);
+        return CreatedAtAction(nameof(Post), new { id = guid }, addOrderCommandInputModel);
     }
 }

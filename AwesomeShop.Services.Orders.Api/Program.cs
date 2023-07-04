@@ -10,6 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatRExtension();
 builder.Services.AddInfrastructureExtension();
+builder.Services.AddMongoDbExtension();
+builder.Services.AddRabbitMqExtension();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -17,8 +20,13 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.InjectStylesheet("/Styles/SwaggerUi/Dark.css");
+    });
 }
+
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
