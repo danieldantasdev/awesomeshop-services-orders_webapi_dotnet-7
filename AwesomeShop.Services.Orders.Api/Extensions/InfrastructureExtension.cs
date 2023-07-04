@@ -1,4 +1,4 @@
-using AwesomeShop.Services.Orders.Core.Repositories;
+using AwesomeShop.Services.Orders.Application.Subscribers;
 using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
 using AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Implementations.Orders;
 
@@ -9,6 +9,7 @@ public static class InfrastructureExtension
     public static IServiceCollection AddInfrastructureExtension(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddScoped<IOrderRepository, OrderRepository>();
+        serviceCollection.AddHostedService<PaymentAcceptedSubscriber>();
         return serviceCollection;
     }
 }
