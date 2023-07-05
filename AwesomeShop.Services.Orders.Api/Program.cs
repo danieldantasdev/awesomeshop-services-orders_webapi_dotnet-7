@@ -13,6 +13,7 @@ builder.Services.AddInfrastructureExtension();
 builder.Services.AddMongoDbExtension();
 builder.Services.AddRabbitMqExtension();
 builder.Services.AddHttpClient();
+builder.Services.AddConsulExtension(builder.Configuration);
 
 var app = builder.Build();
 
@@ -31,6 +32,8 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseConsul();
 
 app.MapControllers();
 
