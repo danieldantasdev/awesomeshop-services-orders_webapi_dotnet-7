@@ -1,6 +1,6 @@
 using RabbitMQ.Client;
 
-namespace AwesomeShop.Services.Orders.Infrastructure.MessageBus.Connections;
+namespace AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.MessageBus.Connections;
 
 public class ProducerConnection
 {

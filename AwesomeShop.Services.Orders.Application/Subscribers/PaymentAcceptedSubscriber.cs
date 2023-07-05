@@ -1,6 +1,6 @@
 using System.Text;
-using AwesomeShop.Services.Orders.Core.MessageBus.Interfaces.Subscribers;
 using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
+using AwesomeShop.Services.Orders.Core.Services.Interfaces.MessageBus.Subscribers;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

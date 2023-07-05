@@ -1,6 +1,9 @@
 using AwesomeShop.Services.Orders.Application.Subscribers;
 using AwesomeShop.Services.Orders.Core.Repositories.Interfaces;
+using AwesomeShop.Services.Orders.Core.Services.Interfaces.Consul;
 using AwesomeShop.Services.Orders.Infrastructure.Persistence.Repositories.Implementations.Orders;
+using AwesomeShop.Services.Orders.Infrastructure.Services.Implementations;
+using AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.Consuls;
 using Consul;
 
 namespace AwesomeShop.Services.Orders.Api.Extensions;
@@ -22,6 +25,8 @@ public static class InfrastructureExtension
             var address = configuration.GetValue<string>("Consul:Host");
             if (address != null) consulConfiguration.Address = new Uri(address);
         }));
+
+        serviceCollection.AddTransient<IConsulService, ConsulService>();
         return serviceCollection;
     }
 
