@@ -1,19 +1,18 @@
 using System.Text;
-using AwesomeShop.Services.Orders.Core.MessageBus.Interfaces.RabbitMq;
-using AwesomeShop.Services.Orders.Infrastructure.MessageBus.Connections;
-using MongoDB.Bson.IO;
+using AwesomeShop.Services.Orders.Core.Services.Interfaces.MessageBus.RabbitMq;
+using AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.MessageBus.Connections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using RabbitMQ.Client;
 using JsonConvert = Newtonsoft.Json.JsonConvert;
 
-namespace AwesomeShop.Services.Orders.Infrastructure.MessageBus.Implementations.RabbitMq;
+namespace AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.MessageBus.RabbitMq;
 
-public class RabbitMqClient : IRabbitMqClient
+public class RabbitMqClientService : IRabbitMqClientService
 {
     private readonly IConnection _connection;
 
-    public RabbitMqClient(ProducerConnection producerConnection)
+    public RabbitMqClientService(ProducerConnection producerConnection)
     {
         _connection = producerConnection.Connection;
     }

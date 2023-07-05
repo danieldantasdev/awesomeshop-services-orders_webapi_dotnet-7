@@ -1,4 +1,4 @@
-namespace AwesomeShop.Services.Orders.Core.MessageBus.Interfaces.Subscribers;
+namespace AwesomeShop.Services.Orders.Core.Services.Interfaces.MessageBus.Subscribers;
 
 public class PaymentAccepted
 {

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace AwesomeShop.Services.Orders.Application.Commands.Orders;
 
-public class AddOrderCommandInputModel : IRequest<Guid>
+public class AddOrderCommandInputModel : IRequest<AddOrderCommandViewModel>
 {
     public CustomerInputModel Customer { get; set; }
     public List<OrderItemInputModel> OrderItems { get; set; }

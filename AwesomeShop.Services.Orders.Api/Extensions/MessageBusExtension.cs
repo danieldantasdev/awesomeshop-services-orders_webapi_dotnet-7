@@ -1,7 +1,7 @@
 using System.Text;
-using AwesomeShop.Services.Orders.Core.MessageBus.Interfaces.RabbitMq;
-using AwesomeShop.Services.Orders.Infrastructure.MessageBus.Connections;
-using AwesomeShop.Services.Orders.Infrastructure.MessageBus.Implementations.RabbitMq;
+using AwesomeShop.Services.Orders.Core.Services.Interfaces.MessageBus.RabbitMq;
+using AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.MessageBus.Connections;
+using AwesomeShop.Services.Orders.Infrastructure.Services.Implementations.MessageBus.RabbitMq;
 using RabbitMQ.Client;
 
 namespace AwesomeShop.Services.Orders.Api.Extensions;
@@ -17,7 +17,7 @@ public static class MessageBusExtension
 
         var connection = connectionFactory.CreateConnection("order-service-producer");
         serviceCollection.AddSingleton(new ProducerConnection(connection));
-        serviceCollection.AddSingleton<IRabbitMqClient, RabbitMqClient>();
+        serviceCollection.AddSingleton<IRabbitMqClientService, RabbitMqClientService>();
 
         return serviceCollection;
     }
