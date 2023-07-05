@@ -12,6 +12,7 @@ builder.Services.AddMediatRExtension();
 builder.Services.AddInfrastructureExtension();
 builder.Services.AddMongoDbExtension();
 builder.Services.AddRabbitMqExtension();
+builder.Services.AddRedisExtension();
 builder.Services.AddHttpClient();
 builder.Services.AddConsulExtension(builder.Configuration);
 
